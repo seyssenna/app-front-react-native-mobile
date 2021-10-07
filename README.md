@@ -1,5 +1,7 @@
 # React Native front application
 
+** implementation d'un router en cours avant de faire les autre routes **
+
 application front qui qui cominique avec une API back via AXIOS qui permet de faire de l'authentification afin de rechercher et consulter une liste d'utilisateur de la meme API.
 le but etant de travailler sur une authentification sécurisé.
 
