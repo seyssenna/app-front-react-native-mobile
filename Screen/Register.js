@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, Linking } from 'react-native';
-
-//import { Link, Redirect } from 'react-router-native'
- import api from '../Utils/api'
+import api from '../Utils/api'
 
 export default function Register(){
     const [firstname, setFirstname] = useState("")
@@ -24,7 +22,6 @@ export default function Register(){
             const result = await api.post('/users/', {firstname, lastname, username, email, password});
 
             if (result.status === 201) {
-                // setRedirect(true)
                 console.log(result)
             }
         } catch (err) {
@@ -32,9 +29,6 @@ export default function Register(){
         }
     }
 
-    // const handleSubmit = () => {
-    //     console.log(firstname, lastname, username, email)
-    // }
 
     return (
         <View>

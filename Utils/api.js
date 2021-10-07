@@ -6,7 +6,7 @@ import axios from 'axios'
 //Ici, nous restons en local -> http://localhost:3000/api/v1/
 
 const instance = axios.create({
-    baseURL: 'http://api.pote.dev'
+    baseURL: 'https://api.pote.dev'
 })
 
 export default instance
